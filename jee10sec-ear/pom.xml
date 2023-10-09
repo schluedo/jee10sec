@@ -20,7 +20,7 @@
 
 	<artifactId>jee10sec-ear</artifactId>
 
-	<name>Pulse: EAR Module</name>
+	<name>EAR Module</name>
 
 	<properties>
 		<!-- context root of web-app -->
@@ -61,10 +61,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ear-plugin</artifactId>
+				<version>3.3.0</version>
 				<configuration>
 					<generateApplicationXml>false</generateApplicationXml>
 					<!-- Tell Maven we are using Java EE 7 -->
-					<version>7</version>
+					<version>10</version>
 					<!-- Use Java EE ear libraries as needed. Java EE ear libraries are 
 						in easy way to package any libraries needed in the ear, and automatically 
 						have any modules (EJB-JARs and WARs) use them -->
